@@ -1,0 +1,16 @@
+
+name: 'thanks action'
+description: 'say thanks on pull request'
+author: 'alyssa d'
+
+inputs:
+GITHUB_TOKEN:
+description: 'github token'
+required: 'true'
+TENOR_TOKEN:
+description: 'tenor api token'
+required: 'true'
+
+runs:
+using: 'node12'
+main: 'dist/index.js'
