@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checokut code
-    - uses: actions/checkout@v2
+    - run: actions/checkout@v2
     - name: log to console
       run: node actions/action.js 
   
