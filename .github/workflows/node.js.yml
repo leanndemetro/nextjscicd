@@ -14,5 +14,5 @@ jobs:
     - name: Checokut code
     - uses: actions/checkout@v2
     - name: log to console
-      uses: node action.js 
+      uses: node actions/action.js 
   
