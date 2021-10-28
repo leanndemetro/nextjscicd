@@ -3,6 +3,11 @@ name: 'thanks action'
 description: 'say thanks on pull request'
 author: 'alyssa d'
 
+inputs:
+GH_TOKEN:
+description: 'github token'
+required: 'true'
+
 
 runs:
 using: 'node12'
