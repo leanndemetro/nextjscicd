@@ -11,8 +11,13 @@ jobs:
     name: Log Hello to console
     runs-on: ubuntu-latest
     steps:
-    - name: Checokut code
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm install
+      - run: npm test
     - name: log to console
-      uses: node actions/action.js 
+      run: node actions/action.js 
   
